@@ -1,0 +1,25 @@
+{
+  "name": "Swapi Api",
+  "api_id": "2",
+  "org_id": "default",
+  "definition": {
+    "location": "header",
+    "key": "version"
+  },
+  "auth": {
+    "auth_header_name": "authorization"
+  },
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default"
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/swapi/",
+    "target_url": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+    "strip_listen_path": true
+  }
+}
